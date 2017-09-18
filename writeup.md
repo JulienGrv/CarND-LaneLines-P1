@@ -10,6 +10,7 @@ The goals / steps of this project are the following:
 ## Table of Contents
 
 1. [Directory Structure](#directory-structure)
+1. [Usage](#usage)
 1. [General Approach](#general-approach)
 1. [Reflection](#reflection)
 1. [Potential shortcomings with the current pipeline](#potential-shortcomings-with-the-current-pipeline)
@@ -43,6 +44,15 @@ The goals / steps of this project are the following:
         challenge.mp4
         solidWhiteRight.mp4
         solidYellowLeft.mp4
+```
+
+## Usage
+
+You just need to run the `P1.ipynb` notebook. Don't forget to activate the [carnd-term1](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md) environment beforehand.
+
+```bash
+source activate carnd-term1
+jupyter notebook P1.ipynb
 ```
 
 ## General Approach
