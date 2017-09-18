@@ -75,10 +75,10 @@ The lane lines detection pipeline consists of 7 steps:
 1. Edges detection using Canny filter
 1. Selecting Region of Interest (ROI) using fillPoly
 1. Lines detection using HoughLinesP filter
-1. Finding lane lines in the detected lines with the custom draw_lines() function (explained in [Drawing Lines](#drawing-lines)
-1. Add found lines to initial image using addWeigthed
+1. Finding lane lines in the detected lines with the custom draw_lines() function (explained in [Drawing Lines](#drawing-lines))
+1. Adding found lines to initial image using addWeigthed
 
-In the 2 following subsections, I detail the cropping of the ROI and the draw_lines() function which are the only part that includes changes of my own.
+In the 2 following subsections, I detail the cropping of the ROI and the draw_lines() function which are the only parts that includes changes of my own.
 
 ### Cropping Region of Interest
 
@@ -89,7 +89,7 @@ The Region of Interest (ROI) is the region comprised of the road lane and latera
 The HoughLinesP filter returns many detected lines, some belongs to road marker edges, others to undesired asperities from the road. This is where the function draw\_lines() comes in. With the draw_lines() function, we find the lane lines and we draw a line over each of them. These are the steps used:
 
 1. Calculate lines slope
-1. Get rid of outlier lines according to their slope deviation from a slope reference (remove lines from the road asperities)
+1. Get rid of outlier lines according to their slope deviation from a slope reference (remove lines of the road asperities)
 1. Seperate lines between left (negative slope <0) and right (positive slope >0)
 1. Fit a polynomial of degree 1 (linear regression) to the left and right lines
 1. Draw the 2 lane lines using the left and right polynomial
@@ -110,7 +110,7 @@ That being said, there are some obvious limitations in this solution that we can
 ## Possible improvements to the current pipeline
 
 * Use HSV colors and different filters that improve edge detection according to road conditions (night, etc.)
-* Fit a polynomial of higher degree to improve the accuracy of the lane detection
+* Fit a polynomial of higher degree to improve the accuracy of the lane detection for curved roads
 
 ## About
 
