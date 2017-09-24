@@ -20,9 +20,9 @@ The goals / steps of this project are the following:
 ## Directory Structure
 
 ```plain
-│   P1.ipynb                            - Project Notebook
+│   P1.ipynb                            <- Project Notebook
 │   README.md
-│   writeup.md                          - Project Writeup
+│   writeup.md                          <- Project Writeup
 │   writeup_template.md
 │
 ├───examples
